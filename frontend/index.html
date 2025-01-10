@@ -1,0 +1,148 @@
+</html>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Washing-MEchine</title>
+  <link rel="stylesheet" href="./src/assets/header.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="header-content">
+        <div class="header-primary-menu">
+          <div class="header-account-menu">
+            <a href="https://reservation.me-mines-saint-etienne.org/login" target="_blank">
+              <img src="./src/assets/account-logo.png" alt="Account Icon" class="menu-icon"> MON COMPTE
+            </a>
+          </div>
+          <div class="header-reservation-menu">
+            <a href="https://reservation.me-mines-saint-etienne.org/camp01" target="_blank">
+              <img src="./src/assets/calendar.png" alt="Reserve Icon" class="menu-icon"> RESERVEZ ICI
+            </a>
+          </div>
+          <div class="header-phone-menu">+33(0)4 77 42 93 00 ou +33(0)4 77 42 01 83</div>
+        </div>
+        <div class="header-secondary-menu">
+          <div class="header-facebook-menu">
+            <a href="https://www.facebook.com/me.mines.saint.etienne" target="_blank">
+              <img src="./src/assets/f_logo_green.png" alt="Facebook Icon" class="menu-icon"> Suivez-nous sur Facebook
+              !
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div id="app"></div>
+  <script type="module" src="./src/main.js"></script>
+
+</body>
+
+</html>
+
+<style>
+  /* General Reset */
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  header {
+    background-color: #3b4a53;
+    /* Matches the dark background in your image */
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    /* Ensures left and right alignment */
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Primary Menu on the Left */
+  .header-primary-menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    /* Pushes the secondary menu to the far right */
+  }
+
+  .header-account-menu a,
+  .header-reservation-menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    background-color: #4CAF50;
+    /* Green background for buttons */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .header-account-menu a:hover,
+  .header-reservation-menu a:hover {
+    background-color: #45a049;
+    /* Slightly darker green for hover effect */
+  }
+
+  .header-phone-menu {
+    font-weight: 400;
+  }
+
+  /* Secondary Menu on the Right */
+  .header-secondary-menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* Aligns the secondary menu to the far right */
+  }
+
+  .header-facebook-menu a {
+    text-decoration: none;
+    color: #4CAF50;
+    /* Green color for Facebook text */
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .header-facebook-menu a:hover {
+    text-decoration: underline;
+  }
+
+  /* Icon Styling */
+  .menu-icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  /* Additional Hover Effect */
+  .menu-icon:hover {
+    opacity: 0.8;
+  }
+</style>
